@@ -173,6 +173,9 @@ window.addEventListener('keydown',(event)=>{
     if(event.key==`/`){
         evaluation(`/`);
     }
+    if(event.key==`.`){
+        evaluation('.');
+    }
     if(event.key==`Backspace`){
         back_btn();
     }
