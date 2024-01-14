@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="calculator.css">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="calc-container">
+            <div class="calc-header">
+                <h2>calc</h2>
+                <div class="theme-container">
+                    <div>THEME</div>
+                    <div class="themes">
+                        <div class="themes-num">
+                            <div class="theme1">1</div>
+                            <div class="theme2">2</div>
+                            <div class="theme3">3</div>
+                        </div>
+                        <div class="theme-converter-container">
+                            <div class="theme-converter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="value">
+                <h1>0</h1>
+            </div>
+    
+            <div class="keypad">
+                <div class="num-keypad">
+                    <div class="row1">
+                        <div onclick="evaluation(7)" id="7">7</div>
+                        <div onclick="evaluation(8)" id="8">8</div>
+                        <div onclick="evaluation(9)" id="9">9</div>
+                        <div onclick="back_btn()" id="del">DEL</div>
+                    </div>
+                    <div class="row2">
+                        <div onclick="evaluation(4)" id="4">4</div>
+                        <div onclick="evaluation(5)" id="5">5</div>
+                        <div onclick="evaluation(6)" id="6">6</div>
+                        <div onclick="evaluation(`+`)" id="plus">+</div>
+                    </div>
+                    <div class="row3">
+                        <div onclick="evaluation(1)" id="1">1</div>
+                        <div onclick="evaluation(2)" id="2">2</div>
+                        <div onclick="evaluation(3)" id="3">3</div>
+                        <div onclick="evaluation(`-`)" id="minus">-</div>
+                    </div>
+                    <div class="row4">
+                        <div onclick="evaluation(`.`)" id="dot">.</div>
+                        <div onclick="evaluation(0)" id="0">0</div>
+                        <div onclick="evaluation(`/`)" id="div">/</div>
+                        <div onclick="evaluation(`*`)" id="mul">x</div>
+                    </div>
+                    <div class="reset-evaluation">
+                        <div onclick="reset()" id="reset">RESET</div>
+                        <div onclick="equals()" id="equal">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>
